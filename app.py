@@ -264,8 +264,8 @@ st.markdown("""
         ✓ Revenue breakdown and rate comparison<br>
         ✓ How To Use guide
     </p>
-    <a href="https://clearmetric.gumroad.com" target="_blank">
-        Get It on Gumroad — $11.99 →
+    <a href="https://clearmetric.gumroad.com/l/freelance-rate" target="_blank">
+        Get It on Gumroad — $9.99 →
     </a>
 </div>
 """, unsafe_allow_html=True)
@@ -277,19 +277,19 @@ with cx1:
     st.markdown("""
     **📋 Freelancer Tax Planner** — $14.99
     Estimate quarterly taxes, deductions, and self-employment tax.
-    [Get it →](https://clearmetric.gumroad.com)
+    [Get it →](https://clearmetric.gumroad.com/l/side-hustle-tax)
     """)
 with cx2:
     st.markdown("""
     **📊 Budget Planner** — $13.99
     Track income, expenses, savings with the 50/30/20 framework.
-    [Get it →](https://clearmetric.gumroad.com)
+    [Get it →](https://clearmetric.gumroad.com/l/budget-planner)
     """)
 with cx3:
     st.markdown("""
     **🔥 FIRE Calculator** — $14.99
     Find your FIRE number, scenario comparison, year-by-year projection.
-    [Get it →](https://clearmetric.gumroad.com)
+    [Get it →](https://clearmetric.gumroad.com/l/fire-calculator)
     """)
 
 # Footer
