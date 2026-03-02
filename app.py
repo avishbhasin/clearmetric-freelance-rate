@@ -51,16 +51,17 @@ st.markdown("---")
 # ---------------------------------------------------------------------------
 with st.sidebar:
     st.markdown("## Your Numbers")
+    st.button("🔄 Update Results", use_container_width=True)
 
     st.markdown("### Income & Expenses")
-    target_annual = st.number_input("Target Annual Income ($)", value=80_000, min_value=0, step=5_000, format="%d")
-    annual_expenses = st.number_input("Annual Business Expenses ($)", value=5_000, min_value=0, step=500, format="%d",
+    target_annual = st.number_input("Target Annual Income ($)", value=80_000, min_value=0, step=5_000)
+    annual_expenses = st.number_input("Annual Business Expenses ($)", value=5_000, min_value=0, step=500,
                                      help="Software, tools, coworking, etc.")
     self_employment_tax = st.slider("Self-Employment Tax Rate (%)", 0.0, 25.0, 15.3, 0.5) / 100
     income_tax_rate = st.slider("Effective Income Tax Rate (%)", 0.0, 50.0, 22.0, 1.0) / 100
 
     st.markdown("### Benefits & Savings")
-    health_insurance = st.number_input("Health Insurance ($/month)", value=500, min_value=0, step=50, format="%d")
+    health_insurance = st.number_input("Health Insurance ($/month)", value=500, min_value=0, step=50)
     retirement_pct = st.slider("Retirement Savings (% of income)", 0.0, 30.0, 10.0, 1.0) / 100
 
     st.markdown("### Time Off")
@@ -218,7 +219,7 @@ st.markdown("## Project Pricer")
 
 proj_col1, proj_col2 = st.columns(2)
 with proj_col1:
-    project_hours = st.number_input("Project Hours", value=40, min_value=0, step=5, format="%d")
+    project_hours = st.number_input("Project Hours", value=40, min_value=0, step=5)
     suggested_price = project_hours * hourly_recommended
 
 with proj_col2:
@@ -232,7 +233,7 @@ st.markdown("---")
 # ---------------------------------------------------------------------------
 st.markdown("## Client Offer Calculator")
 
-client_offer = st.number_input("If a client offers ($/hour)", value=100, min_value=0, step=10, format="%d")
+client_offer = st.number_input("If a client offers ($/hour)", value=100, min_value=0, step=10)
 if client_offer > 0:
     gross_from_offer = client_offer * billable_hours_year
     # Apply same cost structure (simplified)
